@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+   <head>
+       <title> PROGRAMA DE ERICK </title>
+	   <meta charset="utf-8"/>
+	 </head>
+<form id="fornulario" name="formulario">
+
+   <body background=" san.jpg"> 
+ 
+       <header>
+        <h1>Bienvenido a mi Pagina</h1>
+        </header>
+       <fieldset style="border:6px groove #ccc; background:16BCBC;">
+         <nav>
+           <ul>
+	   
+   <a href="https://www.twitter.com/" target="_blank"><liv>*Twitter <img src="listo.jpg"></li></a><br> 
+   <a href="https://www.youtube.com/" target="_blank"><liv>*Youtube <img src="loloo.gif"></li></a><br>
+   <a href="https://www.facebook.com/" target="_blank"><liv>*Facebook<img src="FCE.jpg"></li></a><br>
+           </ul>
+          </nav>
+<legend>Datos del Usuario</legend>
+<B>Cedula</B><input Type="text" id="cedulavalidar"  value="" style=" border: 2px solid #ccc;">
+<input type="button" value="Ingresar" onclick="cedula1()" style="border:6px groove #ccc;background-color:#99CCFF" ><br>
+<B>Nombre</B><input Type="text" id="nombrevalidar"  value="" style=" border: 2px solid #ccc;">
+<input type="button" value="Ingresar" onclick="nombre1()"  style="border:6px groove #ccc;background-color:#99CCFF" ><br>
+<B>E-Mail</B><input Type="text" id="correovalidar"  value="" style=" border: 2px solid #ccc;">
+<input type="button" value="Ingresar" onclick="correo1()"  style="border:6px groove #ccc;background-color:#99CCFF"><br>
+<B>Telofono</B><input Type="text" id="telefonovalidar"  value="" style=" border: 2px solid #ccc;" >
+<input type="button" value="Ingresar" onclick="telefono1()" style="border:6px groove #ccc;background-color:#99CCFF" ><br>
+<B>Fecha</B><input Type="date" id="fechavalidar"  value="" style=" border: 2px solid #ccc;" <br></br>
+   <header>
+   <footer>
+   
+<br><i><p> Hecho por Erick Alexander Cedeño Flores </p></i></br>
+
+</footer>
+</header>
+</fieldset>
+</form>
+<EMBED SRC="http://www.goear.com/listen/1375d7d/new-divide-linkin-park" AUTOSTART=true LOOP=infinite VOLUME="80" WIDTH="0" HEIGHT="0"> 
+
+     </body>
+</html>
+<script>
+
+function cedula1()
+{
+if (/[a-z]/.test(document.getElementById("cedulavalidar").value))
+     {
+     alert("Incorrecto solo numeros")
+            }
+else
+{
+    alert("Correcto")
+}
+}
+
+function nombre1()
+{
+if (/[0-9]/.test(document.getElementById("nombrevalidar").value))
+     {
+     alert("Incorrecto solo letras")
+            }
+else
+{
+    alert("Correcto")
+}
+}
+function correo1()
+{
+if (/^[\w-\.-\_]+@+([\w]+\.)+[\w]{2,4}$/.test(document.getElementById("correovalidar").value))
+  
+	{
+     alert(" E-mail Incorrecto")
+            }
+else
+{
+    alert("E-mail correcto")
+}
+}
+
+function telefono1()
+{
+if (/[a-z]/.test(document.getElementById("telefonovalidar").value))
+     {
+     alert("Incorrecto solo numeros")
+            }
+else
+{
+    alert("Correcto")
+}
+}
+</script>
