@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ROl DE PAGO </title>
+<meta charset="utf-8"/>
+</head>
+<center><h1> Empresa X </h1></center>
+<body onload="generar()" background=" san.jpg">
+<form id="fornulario" name="formulario">
+    <nav>
+	   <p>Visitanos en: </p>
+           <ul>
+	   
+   <a href="https://www.twitter.com/" target="_blank"><liv>*Twitter <img src="listo.jpg"></li></a><br> 
+   <a href="https://www.youtube.com/" target="_blank"><liv>*Youtube <img src="loloo.gif"></li></a><br>
+   <a href="https://www.facebook.com/" target="_blank"><liv>*Facebook<img src="FCE.jpg"></li></a><br>
+           </ul>
+          </nav>
+<fieldset style="border:6px groove #ccc; background:16BCBC;">
+<div id="contenedor">
+</div>
+<legend><i><b>Datos del Usuario</b></i></legend>
+</fieldset>
+</form>
+    <footer>
+   
+<br><i><b><p> Hecho por Erick Alexander Cedeño Flores </p></b></i></br>
+      </footer>
+<EMBED SRC="http://www.goear.com/listen/1d374d3/in-the-end-likin-park" AUTOSTART=true LOOP=infinite VOLUME="80" WIDTH="0" HEIGHT="0"> 
+     </body>
+     </html> 
+<script>
+
+function generar()
+{
+	var tab ="";
+	for(i=1;i<=12;i++)
+	{
+		tab+="<br><b>Sueldo Basico $</b><input type='text' id='sueldo"+i+"' value='0' oninput='calcular()' >"
+        tab+="<b>Horas Extras $</b><input type='text' id='horasex"+i+"' value='0' oninput='calcular()'>"
+		tab+="<b>Aporte al IESS $</b><input type='text' id='apor"+i+"' value='0' oninput='calcular()'>"
+		tab+="<b>Horas descontadas $</b><input type='text' id='horasdes"+i+"' value='0' oninput='calcular()'>"
+	    tab+="<b>Total$</b><input type='text' id='subtotal"+i+"' value='0.00'>"
+
+	}
+	
+	tab+="<br><b>Total De Ingresos Obetenidos al Año$</b> <input type='text' id='total' value='0.00'>"
+	
+	document.getElementById('contenedor').innerHTML=tab;
+}
+function calcular()
+   {
+   var acu=0;
+	for(i=1;i<=12;i++)
+	{
+		document.getElementById("subtotal"+i).value=
+		parseInt(document.getElementById("sueldo"+i).value)+
+		parseInt(document.getElementById("horasex"+i).value)-
+		parseInt(document.getElementById("apor"+i).value)-
+		parseInt(document.getElementById("horasdes"+i).value);
+		acu+=parseInt(document.getElementById("subtotal"+i).value);
+	}
+	document.getElementById('total').value=acu;
+   }
+
+
+
+
+
+</script>
